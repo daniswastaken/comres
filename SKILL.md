@@ -681,6 +681,15 @@ Score 0.0–1.0. Target: ≥ 0.75 for 1st-place candidate.
       "citation_quality": "float",
       "counterargument_score": "float"
     },
+    "paper_links": [
+      {
+        "title": "string",
+        "competition": "string",
+        "year": "integer",
+        "placement": "string",
+        "url": "string (direct link to paper/entry)"
+      }
+    ],
     "mined_source_entries": [
       {
         "competition": "string",
@@ -703,6 +712,20 @@ The orchestrator renders the VictoryUpgrade output into this user-facing format:
 
 ```markdown
 # [Proposal Title]
+
+## Paper Links
+
+All papers/entries found matching the idea, with direct source URLs:
+
+| # | Title | Competition | Year | Placement | URL |
+|---|-------|-------------|------|-----------|-----|
+| 1 | [entry title] | [competition name] | [year] | [placement] | [url] |
+| 2 | [entry title] | [competition name] | [year] | [placement] | [url] |
+| ... | ... | ... | ... | ... | ... |
+
+**[N] papers found across [M] competitions, [earliest]–2026**
+
+---
 
 ## Mined Entries Overview (All Years, All Placements)
 
