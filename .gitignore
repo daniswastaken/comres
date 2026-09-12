@@ -1,0 +1,6 @@
+# Opencode session and cache files
+.opencode/opencode-loop/
+.opencode/opencode-session/
+*.opencode-session.json
+.DS_Store
+Thumbs.db
